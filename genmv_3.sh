@@ -1,6 +1,4 @@
 #!/bin/bash
-# genmv_3.sh - Script pilote non-interactif : L/N/S/D/A
-# Etape 3 du sujet SAE 51
 
 RAM=4096
 DISK=65536
@@ -79,7 +77,6 @@ arreter() {
     echo "VM $nom arretee."
 }
 
-# --- Main ---
 if [ $# -lt 1 ]; then
     usage
 fi

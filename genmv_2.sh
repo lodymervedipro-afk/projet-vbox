@@ -1,13 +1,10 @@
 #!/bin/bash
-# genmv_2.sh - Idempotence : verifie si Debian1 existe deja et la supprime avant recreation
-# Etape 2 du sujet SAE 51 (plus de pause, script relancable a l'identique)
 
 NOM="Debian1"
 RAM=4096
 DISK=65536
 OSTYPE="Debian_64"
 
-# Verifie si la VM existe deja
 VBoxManage showvminfo "$NOM" >/dev/null 2>&1
 if [ $? -eq 0 ]; then
     echo "La VM $NOM existe deja, suppression..."

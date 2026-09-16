@@ -1,10 +1,8 @@
 #!/bin/bash
-# genmv_1.sh - Creation d'une VM Debian1 fixe, pause, puis destruction
-# Etape 1 du sujet SAE 51
 
 NOM="Debian1"
 RAM=4096
-DISK=65536   # en MiB (64 GiB)
+DISK=65536
 OSTYPE="Debian_64"
 
 echo "Creation de la VM $NOM..."
